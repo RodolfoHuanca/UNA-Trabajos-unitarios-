@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int vi[200][200], fil,col;
+    cout<<"Filas: ";
+    cin>>fil;
+    cout<<"columnas: ";
+    cin>>col;
+    
+    int num=2;
+    
+    for (int i=0; i<fil ; i++){
+        for (int j=0; j<col ; j++){
+            if( j%2==1 ){
+                vi[i][j] = 0;
+            } else {
+                vi[i][j] = num;
+                num = num + 2;
+            }
+            cout<<vi[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
